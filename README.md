@@ -1,5 +1,5 @@
 # ChatServer
-基于muduo网络库的集群聊天服务器，NginxTCP负载均衡以及Redis中间件跨服务器通信
+基于muduo网络库的集群聊天服务器，NginxTCP负载均衡以及Redis中间件跨服务器通信，JSON序列化与反序列化消息作为通信协议
 
 ## 开发环境
 - Linux kernel version 6.2.0-34-generic
@@ -56,3 +56,6 @@ offlinemessage表
 2. `vim /usr/local/nginx/conf/nginx.conf`添加TCP负载均衡及服务器信息
 ![Nginx配置TCP负载均衡](./READMEPicture/Nginx配置TCP负载均衡.png)
 stream为TCP负载均衡器listen 8000端口
+
+## 基于发布-订阅redis消息队列进行跨服务器通信
+![跨服务器通信](./READMEPicture/跨服务器通信.png)
