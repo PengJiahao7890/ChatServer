@@ -58,4 +58,4 @@ offlinemessage表
 stream为TCP负载均衡器listen 8000端口
 
 ## 基于发布-订阅redis消息队列进行跨服务器通信
-![跨服务器通信](./READMEPicture/跨服务器通信.png)
+![跨服务器通信](./READMEPicture/redis跨服务器通信.png)
